@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import iexam
 
-@admin.register(iexam)
+@admin.register(veexam)
 class ExamAdmin(admin.ModelAdmin):
     list_display = ('exam_name', 'created_at', 'exam_date', 'is_public')
     list_filter = ('is_public', 'created_at')
